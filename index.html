@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Get Megan (Beta)</title>
-  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <title>Get Megan</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -17,29 +17,28 @@
       color: #ffffff;
     }
 
-    header {
-      padding: 2rem 1rem;
+    .card {
+      background-color: #ffe5ec;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+      z-index: 10;
+      color: #ff69b4;
     }
 
     h1 {
-      font-size: 3rem;
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
       color: #486376;
     }
 
-    .pulse {
-      animation: pulse 2s infinite ease-in-out;
-      color: #ffffff;
-      margin-top: 1rem;
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.5;
-      }
+    p.description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
     }
 
     .button {
@@ -77,7 +76,7 @@
 
     .credits a {
       color: #3399ff;
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     .credits a:hover {
@@ -106,18 +105,18 @@
   </style>
 </head>
 <body>
-  <header>
+  <div class="card">
     <h1>Welcome to Get Megan (Beta)</h1>
-    <p class="pulse">Featuring Original Character “Megan” by ctchrysler. All rights reserved. For entertainment purposes only.</p>
+    <p class="description">Featuring Original Character “Megan” by ctchrysler. All rights reserved. For entertainment purposes only.</p>
     <a id="downloadButton" href="Megan.png" onclick="handleDownload(event);">
       <button class="button">Get Megan</button>
     </a>
-  </header>
+  </div>
+
   <footer class="footer">
     <p class="credits">
-      This site uses an original character designed and created by ctchrysler ©. If the original creator wishes for this site to be taken down, it will be done. <br />
-      Version: v1.0 beta 1<br />
-      <a href="https://www.ctchrysler.com" target="_blank" rel="noopener noreferrer">Visit ctchrysler.com</a>
+      This site uses an original character designed and created by <a href="https://www.ctchrysler.com" target="_blank" rel="noopener noreferrer">ctchrysler</a> ©. If the original creator wishes for this site to be taken down, it will be done.<br />
+      Version: v1.0 beta 2
     </p>
   </footer>
 
